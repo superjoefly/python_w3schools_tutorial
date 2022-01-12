@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Introductory notes for Python Programming Language">
+    <meta name="keywords" content="Python, Programming, W3Schools">
+    <meta name="author" content="Joseph Atwood">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Intro Python Notes</title>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+
+  <body class="w3-container">
+    <h1 style="color:blue;">Intro to Python Programming - W3Schools</h1>
+
+    <h2>Intro Notes:</h2>
+
+    <h3>What is Python</h3>
+
+      <p>Python is a popular programming language created by Guido van Rossum... it was released in 1991</p>
+
+    <h3>Python Uses:</h3>
+      <ul>
+        <li>create web applications on a server</li>
+        <li>create workflows alongside software</li>
+        <li>connect to database systems and to read / modify files</li>
+        <li>handle big data and perform complex mathematics</li>
+        <li>induce rapid prototyping, and for production-ready software development</li>
+      </ul>
+
+    <h3>Reasons to Choose Python:</h3>
+      <ul>
+        <li>works on many different platforms (Windows, Mac, Linux etc).</li>
+        <li>has a simple syntax.</li>
+        <li>requires fewer lines of code compared to other languages.</li>
+        <li>code can be executed as soon as it is written...it runs on an interpreter system.</li>
+        <li>can be written in several ways including procedural, object-oriented and functional.</li>
+      </ul>
+
+    <h3>Helpful Info:</h3>
+      <ul>
+        <li>most recent version of Python is Python 3.</li>
+        <li>can be written in a text editor, as well as in an Integrated Development Environment such as Pycharm or Netbeans.</li>
+      </ul>
+
+    <h3>Python Syntax:</h3>
+      <ul>
+        <li>designed for readability.</li>
+        <li>uses new lines to complete a command.</li>
+        <li>relies on indentation and whitespace to define scope.</li>
+      </ul>
+
+      <hr>
+
+      <h2>Getting Started</h2>
+
+      <p>Check if python is installed (using terminal):</p>
+      <pre><code>
+        python --version
+      </code></pre>
+
+      <p>Execute a python file using terminal:</p>
+      <pre><code>
+        python3   "path-to-file"
+        python3   hello_world.py
+        exit(0)
+      </code></pre>
+
+      <hr>
+
+      <h3>Python Command Line</h3>
+
+      <p>Python can be run directly in a terminal:</p>
+      <pre><code>
+        python3
+        print("Hello World!")
+        exit(0)
+      </code></pre>
+
+      <hr>
+
+      <h3>Python Syntax</h3>
+
+      <p>Python uses indentation (white-space) to indicate a block of code.</p>
+      <pre><code>
+        if 5 > 2
+          print("Five is greater than two!")
+      </code></pre>
+
+      <p>Python will give you an error if you skip the indentation.</p>
+
+      <p>The number of spaces used for indentation is user determined. However, the same number of spaces must be used within the same block of code.</p>
+
+      <hr>
+
+      <h3>Python Variables</h3>
+
+      <p>Variables are created when a value is assigned to it:</p>
+      <pre><code>
+        x = 5
+        name = "Joey"
+      </code></pre>
+
+      <hr>
+
+      <h3>Python Comments</h3>
+
+      <p>Python has commenting capability for the purpose of documentation:</p>
+      <pre><code>
+        #This is a comment
+        #This is another comment
+        print("This is code that will be executed");
+      </code></pre>
+
+      <p>Comments can be used to:</p>
+      <ol>
+        <li>explain code</li>
+        <li>make code more readable</li>
+        <li>prevent execution of code while testing</li>
+      </ol>
+
+      <p>Comments can be placed above code as well as at the end of a line.</p>
+      <pre><code>
+        print("Hello World!")    #Example of end of line comment...
+      </code></pre>
+
+      <p>Here's an example of preventing code execution (commenting out):</p>
+      <pre><code>
+        # print("This line won't execute!")
+        print("This one will!")
+      </code></pre>
+
+      <p>To comment out multiple lines, use multiple hash tags:</p>
+      <pre><code>
+        # I'm a comment
+        # I'm another comment
+        # I'm yet another comment!
+        print("I've been commented out...")
+      </code></pre>
+
+      <p>Here is another common way to create multi-lined comments:</p>
+      <pre><code>
+        """
+            This just so
+            happens to be
+            a multi-line-comment!!!
+        """
+        print("Oh my!")
+      </code></pre>
+
+      <hr>
+
+      <h3>Variables</h3>
+
+      <p>Variables are containers for storing data values.</p>
+
+      <p>Variables are created while storing values to it:</p>
+      <pre><code>
+        x = 5
+        print(x)
+
+        name = "Joey"
+        print(name)
+      </code></pre>
+
+      <p>Python is implicit meaning variables don't have to be declared with certain types. The type can also be changed after it has been set:</p>
+      <pre><code>
+        x = 5         # x is of type integer(int)
+        x = "Baby"    # x is now of type string(str)
+        print(x)
+      </code></pre>
+
+      <hr>
+
+      <h3>Casting</h3>
+
+      <p>To specify data type we can use type-casting:</p>
+      <pre><code>
+        x = str(3)     # x will be '3'
+        y = int(3)     # y will be 3
+        z = float(3)   # z will be 3.0
+      </code></pre>
+
+      <hr>
+
+      <h3>Determine Data Type</h3>
+
+      <p>To determine the data type of a variable, we can use the type() function:</p>
+      <pre><code>
+        x = 5
+        print(type(x))   # x will be of type int
+
+        y = "Joey"
+        print(type(y))   # y will be of type string
+      </code></pre>
+
+      <hr>
+
+      <h3>Single or Double Quotes</h3>
+
+      <p>String variables can be declared using single or double quotes:</p>
+
+      <pre><code>
+        name = "John"
+        #   is the same as
+        name = 'John'
+      </code></pre>
+
+      <hr>
+
+      <h3>Case Sensitivity</h3>
+
+      <p>Variable names are case sensitive:</p>
+      <pre><code>
+        name = "Joey"
+        #   is not the same as
+        NaMe = "Joey"
+
+        # NaMe will not overwrite name
+      </code></pre>
+
+      <hr>
+
+      <h3>Variable Naming</h3>
+
+      <p>Variables in Python can have short names (like x) or longer, more descriptive names (like name).</p>
+
+      <p>The following rules apply to naming variables in Python:</p>
+
+      <ul>
+        <li>A variable name must start with a letter or the underscore character</li>
+        <li>A variable name cannot start with a number</li>
+        <li>A variable name can only contain alpha-numeric characters and underscores</li>
+        <li>Variable names are case sensitive (age, Age and AGE are three different variables)</li>
+      </ul>
+
+      <p>Legal variable names:</p>
+      <pre><code>
+        myname = "Joey"
+        my_name = "Joey"
+        _my_name = "Joey"
+        myName = "Joey"
+        MYNAME = "Joey"
+        myname2 = "Atwood"
+      </code></pre>
+
+      <hr>
+
+      <h3>Multi-Word Variable Names</h3>
+
+      <p>It's important to be consistent with style and casing when creating Python programs.</p>
+
+      <p>The following examples demonstrate variable names that are readable:</p>
+      <pre><code>
+        myFirstName = "Joey"       # Camel Case
+
+        MyFirstName = "Joey"       # Pascal Case
+
+        my_first_name = "Joey"     # Snake Case
+
+        MY_VARIABLE_NAME = "Joey"  # Constants
+      </code></pre>
+
+      <hr>
+
+      <h3>Assigning Multiple Values to Variables</h3>
+
+      <p>Python allows us to assign values to multiple variables in one line.</p>
+      <p>Note: the number of variables must match the number of values.</p>
+      <pre><code>
+        x, y, z = "red", "orange", "yellow"
+
+        # display the values of each variable:
+        print(x)
+        print(y)
+        print(z)
+      </code></pre>
+
+      <hr>
+
+      <h3>Assigning One Value to Multiple Variables</h3>
+
+      <p>We can assign the same value to multiple variables in one line:</p>
+      <pre><code>
+        x = y = z = "bananas"
+      </code></pre>
+
+      <hr>
+
+      <h3>Unpacking Collections</h3>
+
+      <p>Values of a collection (list, tuple etc) can be extracted using a process called unpacking:</p>
+      <pre><code>
+        # create the array:
+        fruits = ["apples", "cherries", "oranges"]
+
+        # unpack the values into idividual variables:
+        x, y, z = fruits
+
+        # display the individual fruits:
+        print(x)
+        print(y)
+        print(z)
+      </code></pre>
+
+      <hr>
+
+      <h3>Output Variables</h3>
+
+      <p>The print() function is often used to output variables:</p>
+      <pre><code>
+        # create and assign the variable:
+        first_name = "Joey"
+
+        # display the value stored in the variable:
+        print(first_name)
+      </code></pre>
+
+      <p>The "+" character can be used for mathematical operations (integers) and for string concatenation:</p>
+      <pre><code>
+        # Create and assign values  (integers) to the variables:
+        x = 5
+        y = 6
+
+        # Add the first two variables and store in another variable:
+        sum = x + y
+
+        # Display the result:
+        print(sum)
+
+        ////////////////////
+
+        # Create and assign values  (strings) to the variables:
+        first_name = "Joey"
+        last_name = "Atwood"
+
+        # Concatenate the two string variables and store in another variable:
+
+        full_name = "first_name" + " " + "last_name"
+
+        # Display the result
+        print(full_name)   # will display Joey Atwood
+      </code></pre>
+
+      <hr>
+
+      <h3>Global Variables</h3>
+
+      <p>Global variables are variables that are created outside of a function...therefor they are within the global scope.</p>
+
+      <pre><code>
+        # Declare / initialize a global variable:
+        my_name = "Joey"
+
+        # Define the function:
+        def displayName(name):
+          print("My name is " + name)
+
+        # Call the function:
+        my_name("Joey")
+      </code></pre>
+
+      <hr>
+
+      <h3>Local Variables</h3>
+
+      <p>Variables created within a function are local to that function. They can only be accessed within the function.</p>
+
+      <pre><code>
+        # Define the function:
+        def display_name():
+
+          # This is a variable that is local to the function
+          my_name = "Joey"
+
+          # Display the message:
+          print("My name is " + my_name)
+
+        # Call the function:
+        display_name()
+
+        print(my_name) # This won;t work because the variable my_name is local to the function and can only be accessed within the function.
+      </code></pre>
+
+      <hr>
+
+      <h3>Global Keyword</h3>
+
+      <p>Variables created within a function are local to that function. However, we can use a the "global" keyword to create a global variable while working within a function.</p>
+
+      <pre><code>
+        def display_name():
+          print("My function is working...")
+
+            # Declare a global variable:
+            global my_name
+
+            # Initialized the global variable with a value:
+            my_name = "Joey"
+
+        # Call the function to create the global variable:
+        display_name()
+
+        # Display the global variable:
+        print("My name is " + my_name)
+      </code></pre>
+
+      <p>To change the value of a global variable while working within a function, refer to the global variable using the global keywork:</p>
+
+      <pre><code>
+        # Create a global variable:
+        my_name = "Joey"
+
+        # Define a function which updates the global variable:
+        def change_my_name():
+          global my_name
+          my_name = "7OEVOL"
+
+        # Call the function which updates the global variable:
+
+        # Display the updated global variable's value:
+        print(my_name)
+      </code></pre>
+
+
+      <hr>
+
+
+      <h3>Python Data Types</h3>
+
+      <p>Python variables can store data of different types. Different types of data can be used for various reasons.</p>
+
+      <p>Python has the following built-in data types:</p>
+
+      <table class="w3-table">
+        <tr>
+          <th>Text</th>
+          <th>Numbers</th>
+          <th>Sequence</th>
+          <th>Mapping</th>
+          <th>Sets</th>
+          <th>Boolean</th>
+          <th>Binary</th>
+        </tr>
+        <tr>
+          <td>str</td>
+          <td>int, float, complex</td>
+          <td>list, tuple, range</td>
+          <td>dict</td>
+          <td>set, frozenset</td>
+          <td>bool</td>
+          <td>bytes, bytearray, memoryview</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <h3>Retrieving Data Type</h3>
+
+      <p>We can use the type() function to get the data type of any object:</p>
+
+      <pre><code>
+        # declare variable:
+        name = "Joey"
+        age = 42
+
+        # display the data type of the variables:
+        type(name)   # str
+        type(age)    # int
+      </code></pre>
+
+      <hr>
+
+      <h3>Setting Data Type</h3>
+
+      <p>Data type is set during variable initialization:</p>
+
+      <table class="w3-table">
+        <tr>
+          <th>Initialization:</th>
+          <th>Data Type:</th>
+        </tr>
+        <tr>
+          <td>message = "Hello World!"</td>
+          <td>str</td>
+        </tr>
+        <tr>
+          <td>number = 20</td>
+          <td>int</td>
+        </tr>
+        <tr>
+          <td>float = 20.5</td>
+          <td>float</td>
+        </tr>
+        <tr>
+          <td>category = 1j</td>
+          <td>complex</td>
+        </tr>
+        <tr>
+          <td>fruits = ["apple", "banana","cherry"]</td>
+          <td>list</td>
+        </tr>
+        <tr>
+          <td>fruits = ("apple", "banana", "cherry")</td>
+          <td>tuple</td>
+        </tr>
+        <tr>
+          <td>x = range(6)</td>
+          <td>range</td>
+        </tr>
+        <tr>
+          <td>x = {"name": "Joey", "age": 42}</td>
+          <td>dict</td>
+        </tr>
+        <tr>
+          <td>fruits = {"apple", "banana", "cherry"}</td>
+          <td>set</td>
+        </tr>
+        <tr>
+          <td>frozenset = ({"apple", "banana", "cherry"})</td>
+          <td>frozenset</td>
+        </tr>
+        <tr>
+          <td>x = True</td>
+          <td>bool</td>
+        </tr>
+        <tr>
+          <td>x = b"Hello"</td>
+          <td>bytes</td>
+        </tr>
+        <tr>
+          <td>bytearray(5)</td>
+          <td>bytearray</td>
+        </tr>
+        <tr>
+          <td>memoryview(bytes(5))</td>
+          <td>memoryview</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <h3>Setting Specific Data Type</h3>
+
+      <p>Constructor functions can be used to set a speficif data type:</p>
+
+      <table class="w3-table">
+        <tr>
+          <th>Example:</th>
+          <th>Data Type:</th>
+        </tr>
+        <tr>
+          <td>x = str("Hello World!")</td>
+          <td>str</td>
+        </tr>
+        <tr>
+          <td>x = int(20)</td>
+          <td>int</td>
+        </tr>
+        <tr>
+          <td>x = float(20.5)</td>
+          <td>float</td>
+        </tr>
+        <tr>
+          <td>x = complex(1j)</td>
+          <td>complex</td>
+        </tr>
+        <tr>
+          <td>x = list(("apple", "banana", "cherry"))</td>
+          <td>list</td>
+        </tr>
+        <tr>
+          <td>x = tuple(("apple", "banana", "cherry"))</td>
+          <td>tuple</td>
+        </tr>
+        <tr>
+          <td>x = range(6)</td>
+          <td>range</td>
+        </tr>
+        <tr>
+          <td>x = dict(name = "Joey", age = 42)</td>
+          <td>dict</td>
+        </tr>
+        <tr>
+          <td>x = set(("apple", "banana", "cherry"))</td>
+          <td>set</td>
+        </tr>
+        <tr>
+          <td>x = frozenset(("apple", "banana", "cherry"))</td>
+          <td>frozenset</td>
+        </tr>
+        <tr>
+          <td>x = bool(5)</td>
+          <td>bool</td>
+        </tr>
+        <tr>
+          <td>x = bytes(5)</td>
+          <td>byte</td>
+        </tr>
+        <tr>
+          <td>x = bytearray(5)</td>
+          <td>bytearray</td>
+        </tr>
+        <tr>
+          <td>x = memoryview(bytes(5))</td>
+          <td>memoryview</td>
+        </tr>
+      </table>
+
+      <hr>
+
+      <h3>Python Numbers</h3>
+
+      <p>Python has 3 numeric types:</p>
+
+      <ul>
+        <li>int</li>
+        <li>float</li>
+        <li>complex</li>
+      </ul>
+
+      <p>Variables of numeric types are created when a value is assigned to them:</p>
+
+      <pre><code>
+        x = 1     # int
+        y = 2.0   # float
+        z = 1j    # complex
+      </code></pre>
+
+      <p>We can use the type() function to determine the type of an object in Python:</p>
+
+      <pre><code>
+        print(type(x))   # Displays int
+        print(type(y))   # Displays float
+        print(type(z))   # Displays complex
+      </code></pre>
+
+      <hr>
+
+      <h3>Int</h3>
+
+      <p>Int, or integer, is a whole number, positive or negative, without decimals, of unlimited length:</p>
+
+      <pre><code>
+        x = 1
+        y = 8137501988374
+        z = -1892340187034
+
+        print(type(x))   # int
+        print(type(y))   # int
+        print(type(z))   # int
+      </code></pre>
+
+      <hr>
+
+      <h3>Float</h3>
+
+
+
+
+
+
+
+
+    <script src="http://localhost:35729/livereload.js"></script>
+  </body>
+
+</html>
