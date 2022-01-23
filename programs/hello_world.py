@@ -1,9 +1,14 @@
+"""
+Just doing some testing and refreshing Python skills
+"""
+
+import random
+
 
 # Define the main function:
 def main():
 
     """This is a function docstring...
-    Just doing some refreshing and testing...
 
     """
 
@@ -41,7 +46,7 @@ def main():
 
 
 
-    # Indentation:
+    # INDENTATION:
 
     if 5 > 2:
         print("Five is greater than two...")
@@ -61,7 +66,7 @@ def main():
 
 
 
-    # Variables:
+    # VARIABLES:
 
     # Python variables are created during assignment:
 
@@ -79,7 +84,7 @@ def main():
 
 
 
-    # Comments:
+    # COMMENTS:
 
     # Python comments start with a # and are used for in-code documentation,
     # to make code more readable and to prevent the execution of code
@@ -150,7 +155,7 @@ def main():
     ######################
 
 
-    # Type Casting:
+    # TYPE CASTING:
 
     # Type casting can be used to specify the data type for a variable:
 
@@ -167,7 +172,7 @@ def main():
     ######################
 
 
-    # String variables can be declared using single or double quotes:
+    # String variables can be declared using SINGLE or DOUBLE quotes:
 
     first_name = "Joey"
     # is the same as
@@ -179,7 +184,7 @@ def main():
     ######################
 
 
-    # Variable names are case-sensitive:
+    # VARIABLE NAMES are CASE SENSITIVE:
 
     my_name = "Joey"
     # is not the same as
@@ -196,7 +201,7 @@ def main():
     ######################
 
 
-    # Rules for Python Variables Names:
+    # RULES for PYTHON VARIABLE NAMES:
 
     # 1. variable names must start with a letter or underscore character
     # 2. a variable name cannot start with a number
@@ -221,7 +226,7 @@ def main():
     ######################
 
 
-    # Many Values to Multiple Variables
+    # MANY VALUES to MULTIPLE VARIABLES (in one statement)
 
     # Python allows us to assign values to multiple variables in
     # one line; the number of variables MUST MATCH the number
@@ -239,7 +244,7 @@ def main():
     ######################
 
 
-    # Assign One Value to Multiple Variables:
+    # ASSIGNING ONE VALUE to MULTIPLE VARIABLES:
 
     # We can assign the same value to multiple variables in on line:
 
@@ -255,7 +260,7 @@ def main():
     ######################
 
 
-    # Collection Unpacking
+    # COLLECTION UNPACKING
 
     # We can extract the values contained within a list, tuple, etc
     # into variables through a process called unpacking
@@ -273,7 +278,7 @@ def main():
     ######################
 
 
-    # Output Variables
+    # OUTPUT VARIABLES
 
     # In Python we use the "print" statement to output variables.
 
@@ -324,7 +329,7 @@ def main():
     ######################
 
 
-    # Global Variables:
+    # GLOBAL VARIABLES:
 
 
     # Variables that are created outside of a function are "global"
@@ -374,7 +379,7 @@ def main():
     ######################
 
 
-    # The global Keyword
+    # THE global KEYWORD
 
 
     # Normally, when we create a variable inside a function, that variable
@@ -407,7 +412,7 @@ def main():
     # PYTHON DATA TYPES
 
 
-    # Built-in Data Types
+    # BUILT IN DATA TYPES
 
     # Variables can store data of different types, and different types
     # of data can be used to do different things.
@@ -426,7 +431,7 @@ def main():
     ###########################
 
 
-    # Getting the Data Type
+    # GETTING DATA TYPE
 
     # We can get the data type of any object using the type() function:
 
@@ -437,7 +442,7 @@ def main():
     print(type(my_num))
 
 
-    # Setting the Data Type
+    # SETTING DATA TYPE
 
     # In Python, the data type is automatically set when we assign
     # a value to the variable:
@@ -501,7 +506,7 @@ def main():
     ###########################
 
 
-    # Setting the Specific Data Type
+    # SETTING SPECIFIC DATA TYPE
 
     # Set and display the specific data type:
     my_var = str("Hello There!")
@@ -565,6 +570,156 @@ def main():
     # Variables of numeric types are created when you assign a value
     # to them.
 
+    # Declare same numeric variables:
+    my_int = 1       # int
+    my_float = 2.2     # float
+    my_complex = 7j      # complex
+
+    # We can use the type() function to verify the type of any
+    # object in Python:
+    print(type(my_int))
+    print(type(my_float))
+    print(type(my_complex))
+
+
+
+
+    # INT
+
+    # An integer (int) is a whole number, positive or negative, without
+    # decimals, of unlimited length.
+
+    # Examples:
+    my_int = 1
+    my_long_int = 50983457203984
+    my_short_int = -198347
+
+    # Display the type of each variable:
+    print(type(my_int))
+    print(type(my_long_int))
+    print(type(my_short_int))
+
+
+
+
+    # FLOAT
+
+    # A floating point number (float) is a number, positive or negative,
+    # containing one or more decimals.
+
+    # Examples:
+    my_float = 1.10
+    my_short_float = 1.0
+    my_longer_float = -37.77
+
+    # Display the type of each variable:
+    print(type(my_float))
+    print(type(my_short_float))
+    print(type(my_longer_float))
+
+    # Floatsd can also be scientific numbers with an "e" to
+    # indicate the power of 10:
+
+    my_float = 35e3
+    my_short_float = 12E4
+    my_longer_float = -87.7e100
+
+    # Display the value of each variable:
+    print(my_float)
+    print(my_short_float)
+    print(my_longer_float)
+
+
+
+
+    # COMPLEX
+
+    # Complex numbers are written with a "j" as the imaginary part.
+
+    # Examples:
+    x = 3 + 5j
+    y = 5j
+    z = -5j
+
+    # Display the type of each variable:
+    print(x)
+    print(type(x))
+    print(type(y))
+    print(type(z))
+
+
+
+
+    # TYPE CONVERSSION
+
+    # We can convert from type to another with the int(), float() and complex() methods:
+
+    # Examples:
+    x = 1
+    y = 2.8
+    z = 7j
+
+    # Convert from int to float:
+    a = float(x)
+    print(a)
+    print(type(a))
+
+    # Convert from float to int:
+    b = int(y)
+    print(b)
+    print(type(b))
+
+    # Convert from int to complex:
+    c = complex(x)
+    print(c)
+    print(type(c))
+
+    ### We cannot convert complex numbers into another type!
+
+
+
+
+    # RANDOM NUMBER
+
+    # Python does not have a random() function to make a random number,
+    # but Python does have a built-in module called "random" that can
+    # be used to make random numbers. This module is imported at the
+    # beginning of this file!
+
+    # Example:
+
+    # Display a random number between 1 and 9:
+    my_random_number = random.randrange(1, 10)
+    print(my_random_number)
+
+
+    #######################################
+
+
+    # PYTHON CASTING
+
+    # SPECIFY a VARIABLE TYPE:
+
+    # Python is an object oriented programming language, ad as such
+    # it uses classes to define data types, including its primitive types.
+
+
+
+    # CASTING in Python is done using constructor functions:
+
+    # int() -
+    # constructs an integer number from an integer literal,
+    # a float literal (by removing all decimals) or a string
+    # literal (providing the string represents a whole number).
+
+    # float() -
+    # constructs a float number from an integer literal,
+    # a float literal or a string literal (providing the string
+    # represents a float or an integer).
+
+    # str() -
+    # constructs a string from a wide variety of data types,
+    # including strings, integer literals and float literals.
 
 
 
